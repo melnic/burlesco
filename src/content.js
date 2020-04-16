@@ -3,7 +3,16 @@ const ABRIL_CODE = `
   document.querySelectorAll('.callpaywall')
     .forEach(x => x.remove());
   document.querySelectorAll('.content-blocked')
-    .forEach(x => x.classList.remove('content-blocked'))
+    .forEach(x => x.classList.remove('content-blocked'));
+  document.querySelectorAll('.piano-offer-overlay')
+    .forEach(x => x.classList.remove('piano-offer-overlay'));
+  document.querySelectorAll('.tp-modal')
+    .forEach(x => x.classList.remove('tp-modal')); 
+  document.querySelectorAll('.tp-backdrop')
+    .forEach(x => x.classList.remove('tp-backdrop')); 
+  document.querySelectorAll('#piano_offer')
+    .forEach(x => x.remove());
+  document.setAttribute("style","overflow:auto !important");
 `;
 
 const INJECTION = {
